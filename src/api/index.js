@@ -11,11 +11,13 @@ export const sendRequest = async (
     // eslint-disable-next-line no-useless-catch
     try {
         const requestUrl = `${baseUrl}/${path}?access_key=${apiKey}${query}`;
+        console.log(baseUrl);
+        console.log(apiKey);
         const options = {
             method,
             mode: 'cors',
             headers: {
-                // 'Content-Type': 'application/json',
+                 //'Content-Type': 'application/json',
                 ...headers,
             }
         };

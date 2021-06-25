@@ -10,10 +10,11 @@ import './App.css';
 
 const App = () => {
     const [weatherData, setWeatherData] = useState(null);
-
+  console.log(weatherData);
+  console.log(setWeatherData);
     return (
         <div className="container">
-            <h2 className="page-title">Get Weather for free!</h2>
+            <h2 className="page-title">Get <span className="Weather">Weather</span>  for free!</h2>
             <Form onSubmitCallback={setWeatherData} />
 
             {weatherData && <WeatherCard weatherData={weatherData} />}

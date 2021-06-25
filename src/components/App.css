@@ -19,4 +19,48 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 36px;
+  text-shadow: 3px 5px 5px black;
+}
+.Weather{
+  color: #d0efef;
+  font-size: 44px;
+}
+.getForm{
+  width: 305px;
+  background-image: linear-gradient(to right, #3d927e 1%, #3096f0 51%, #79d4c4 100%);
+  border-radius: 10px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding: 2px;
+}
+
+.city-title{
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 5px;
+}
+.button-style{
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px 5px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.button-style:hover {
+  background-position: right center;
+}
+.input-style{
+  border-radius: 15px;
+  outline:none;
+}
+.input-style:focus{
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 }
