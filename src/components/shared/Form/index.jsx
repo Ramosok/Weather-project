@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 // api
 import { getCurrentWeather } from 'api/weather';
 
+
 const Form = ({ onSubmitCallback }) => {
   /*useEffect(async () => {
   const data = await getCurrentWeather({ query: 'Madrid' });
@@ -15,10 +16,10 @@ const Form = ({ onSubmitCallback }) => {
     const formData = {
       [event.target.query.name]: event.target.query.value,
     };
-    console.log(formData);
+
     try {
       const data = await getCurrentWeather(formData);
-      console.log(data);
+      console.log(data.current);
       if (onSubmitCallback) {
         onSubmitCallback(data);
       }
@@ -26,6 +27,7 @@ const Form = ({ onSubmitCallback }) => {
       console.error(e);
     }
   };
+
 
   return (
     <form className="getForm" onSubmit={handleSubmit}>

@@ -64,3 +64,48 @@ body {
 .input-style:focus{
   box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 }
+.card_conteiner{
+  width: 500px;
+  height: 300px;
+  margin:0 auto;
+  border:2px solid;
+  border-radius: 20px;
+  background-color: goldenrod;
+  margin-top: 2%;
+  box-shadow: 5px -7px 7px snow;
+  padding: 10px;
+}
+.card-title{
+  color:black;
+}
+.item-title{
+  margin: 5px;
+}
+.header_card{
+  font-size: 7vh;
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+
+
+}
+.header_card img{
+  margin-right: 5vw;
+}
+img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.left_container, .right_container{
+  margin-top: -40px;
+  font-size: 4vh;
+}
+.left_container{
+  float: left;
+  padding-left: 30px;
+}
+.right_container{
+  float: right;
+  padding-right: 30px;
+}
