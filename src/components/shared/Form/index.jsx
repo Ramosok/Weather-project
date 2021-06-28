@@ -19,7 +19,6 @@ const Form = ({ onSubmitCallback }) => {
 
     try {
       const data = await getCurrentWeather(formData);
-      console.log(data.current);
       if (onSubmitCallback) {
         onSubmitCallback(data);
       }
