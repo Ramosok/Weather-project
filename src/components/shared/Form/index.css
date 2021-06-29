@@ -1,0 +1,55 @@
+.input__city-form {
+    background-color: rgba(161, 186, 233, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    text-align:center;
+    font-size:30px;
+    padding:10px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+    inset 0 1px rgba(255,255,255,0.3),
+    inset 0 10px rgba(255,255,255,0.2),
+    inset 0 10px 20px rgba(255,255,255,0.25),
+    inset 0 -15px 30px rgba(0,0,0,0.3);
+}
+
+.input__city-form label {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.input__city-form input[type="text"] {
+    background-color: rgba(233, 174, 64, 0.3);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: large;
+    letter-spacing: 1.5px;
+}
+
+.input__city-form input[type="submit"] {
+    background-color: rgba(233, 174, 64, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #fff;
+    width: 10%;
+    text-align: center;
+}
+
+.input__city-form input[type="text"]:focus {
+    background-color: rgba(204, 143, 30, 0.5);
+}
