@@ -1,40 +1,31 @@
 // libraries
-import React, { useEffect } from 'react';
-// api
-import { getCurrentWeather } from 'api/weather';
+import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+// styles
+import './index.css';
+import 'react-datepicker/dist/react-datepicker.css';
 
+const Form = ({ onSubmitCallback, closeFormCallback }) => {
+    const [startDate, setStartDate] = useState(new Date());
 
-const Form = ({ onSubmitCallback }) => {
-  /*useEffect(async () => {
-  const data = await getCurrentWeather({ query: 'Madrid' });
-      console.log(data);
-  });*/
-
-  const handleSubmit = async event => {
-    event.preventDefault();
-
-    const formData = {
-      [event.target.query.name]: event.target.query.value,
+    const handleSubmit = async event => {
+        event.preventDefault();
+        // check dates and call appropriate method
+        onSubmitCallback(event.target.query.value);
+        closeFormCallback(false);
     };
 
-    try {
-      const data = await getCurrentWeather(formData);
-      if (onSubmitCallback) {
-        onSubmitCallback(data);
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  };
-
-
-  return (
-    <form className="getForm" onSubmit={handleSubmit}>
-      <label htmlFor="query"><span className="page-title city-title">City</span></label>
-      <input className="input-style" id="query" type="text" name="query" placeholder="Please enter city"/>
-      <input className="button-style" type="submit" value="Submit"/>
-    </form>
-  );
+    return (
+        <form className="input__city-form" onSubmit={handleSubmit}>
+            <label htmlFor="query">Hey, bro, let see the weather in your city!</label>
+            <input id="query" type="text" name="query" placeholder="Please enter city" />
+            <DatePicker
+                selected={startDate}
+                onChange={(date) => setStartDate(date)}
+            />
+            <input type="submit" value="Submit" />
+        </form>
+    );
 };
 
 export default Form;
