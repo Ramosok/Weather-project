@@ -34,7 +34,7 @@
 }
 
 .info__center-image{
-    transform: scale(1.4);
+    transform: scale(1.2);
     margin-bottom: 15px;
 
 }
@@ -44,4 +44,8 @@
     text-shadow: 0 0 10px rgb(255, 255, 255);
     margin-bottom: 15px;
     font-weight: 600;
+}
+.stale_text{
+    font-size: 20px;
+    color: #f1f14d;
 }

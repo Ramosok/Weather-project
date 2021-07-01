@@ -4,7 +4,6 @@ import React from 'react';
 import './index.css';
 
 const WeatherCard = ({ weatherData }) => {
-    const currentTime = new Date().toLocaleString();
     const {
         location: { name } = [],
         current: {
@@ -22,7 +21,6 @@ const WeatherCard = ({ weatherData }) => {
 
     return (
         <div className="weathercard__container">
-            <div className="weathercard__date-time">{currentTime}</div>
             <div className="weathercard__city">{name}</div>
             <div className="weathercard__temperature">{temperature}&#xb0;С</div>
 

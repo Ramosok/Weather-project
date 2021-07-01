@@ -1,3 +1,4 @@
 export const DATE_FORMATS = {
-    fullDate: 'YYYY MMMM DD'
+    fullDate: 'DD-MM-YYYY',
+    dateForHistory: 'YYYY-MM-DD'
 }

@@ -53,3 +53,6 @@
 .input__city-form input[type="text"]:focus {
     background-color: rgba(204, 143, 30, 0.5);
 }
+.react-datepicker__month-container {
+    background-color: #b38a0a;
+}
